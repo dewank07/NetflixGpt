@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.scrollFix::-webkit-scrollbar{
+display: none;
+}
