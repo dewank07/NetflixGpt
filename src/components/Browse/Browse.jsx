@@ -16,12 +16,12 @@ const Browse = () => {
   useTopRatedMovies();
   const gptToggle = useSelector((store) => store.gpt.showGptSearch);
   return (
-    <div className='bg-black md:bg-transparent'>
+    <div className=''>
       <Header />
       {gptToggle ? (
         <GPTSearch />
       ) : (
-        <div className='pt-[22%] md:pt-0'>
+        <div className='pt-[22%] md:pt-0 bg-black'>
           <VideoContainer />
           <ListContainer />
         </div>
