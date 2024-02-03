@@ -22,8 +22,7 @@ export const API_OPTION = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2N2Q0ZDgyN2YwODA0OTRlYzViY2U5Y2Y5MGMxZTM0ZCIsInN1YiI6IjYyYjA1YTU5NTk1YTU2MGU0ZmVlMzRjZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OMAI2PkOZvZR9NS9n48VXG2fXK_C30G6zNA7mekLQ_Q",
+    Authorization: "Bearer " + import.meta.env.VITE_REACT_APP_AUTHCODE,
   },
 };
 
@@ -35,4 +34,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "spanish", name: "Spanish" },
 ];
 
-export const OPENAI_KEY = "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";
+export const OPENAI_KEY = import.meta.env.VITE_REACT_APP_OPENAI;
